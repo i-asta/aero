@@ -1,0 +1,99 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* CSS Reset */
+
+:root {
+  --font-primary: "Montserrat", sans-serif;
+
+  --color-primary: #ffffff;
+  --color-primary: #c7c8cc;
+
+  --bg-primary: #000000;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+
+  background-image: url("../assets/rain.jpg");
+  background-position: center;
+  background-size: cover;
+  
+  font-family: var(--font-primary);
+  /* Checks */
+}
+
+/* ----------------------------------------------------- */
+.container-left {
+  flex: 6;
+  
+  height: 100%;
+  width: 100%;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  backdrop-filter: brightness(50%);
+
+  font-size: .8rem;
+  font-weight: 700;
+  color: white;
+
+  padding: 8rem;
+}
+
+.weather-info{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  gap: 2rem;
+}
+
+.info-group{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.info-group > .temperature-data{
+  font-size: 6rem;
+}
+
+.info-group > .location{
+  font-size: 1.8rem;
+}
+
+.info-group > .time-date{
+  font-size: 1.2rem;
+}
+
+.info-group > p{
+  font-size: 1.2rem;
+}
+.info-group > img{
+  height: 2.2rem;
+  width: 2.2rem;
+}
+/* ----------------------------------------------------- */
+.container-right {
+  flex: 4;
+  
+  height: 100%;
+  width: 100%;
+  background-color: #00000058;
+  backdrop-filter: blur(20px);
+}
+
+
